@@ -15,80 +15,98 @@ body {
   background-color: #f9f9f9;
 }
 
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
 /* Header Styles */
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+.header-images {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+.header-images img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
-header nav ul li {
-  margin-right: 20px;
+.header-images img:hover {
+  transform: scale(1.2);
 }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
+/* Left Sidebar Styles */
+
+.left-sidebar {
+  position: fixed;
+  top: 100px;
+  left: 10px;
 }
 
-/* Hero Styles */
-
-.hero {
-  background-image: linear-gradient(to bottom, #333, #555);
-  background-size: 100% 300px;
-  background-position: 0% 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+.left-sidebar img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
 }
 
-.hero img {
+.left-sidebar img:active {
+  transform: scale(0.8);
+}
+
+/* Main Content Styles */
+
+.main-content {
+  margin-left: 150px;
+}
+
+.main-content img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
-/* About Styles */
-
-.about {
-  padding: 2em;
-  background-color: #f9f9f9;
+.main-content img:hover {
+  transform: scale(1.2);
 }
 
-.about img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
+/* Administrator Directory Styles */
+
+.administrator-directory {
+  margin-top: 50px;
 }
 
-/* Contact Styles */
-
-.contact {
-  padding: 2em;
-  background-color: #f9f9f9;
+.administrator-profile {
+  margin-bottom: 50px;
 }
 
-.contact img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.administrator-profile h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.administrator-profile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.administrator-profile li {
+  margin-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -96,15 +114,11 @@ header nav a {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 1em;
+  padding: 10px;
   text-align: center;
   clear: both;
 }
-```
 
-Save this CSS code in a file named `styles.css` and link it to your HTML file using the `<link>` tag:
-
-```
-<head>
-  <link rel="stylesheet" href="styles.css">
-</head>
+footer p {
+  margin-bottom: 10px;
+}
