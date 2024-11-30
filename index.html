@@ -2,46 +2,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYROESPORTS</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYROESPORTS</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.header-images {
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+```    .header-images img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+    .header-images img:hover {
+        transform: scale(1.2);
+    }
+    
+    .left-sidebar {
+        position: fixed;
+        top: 100px;
+        left: 10px;
+    }
+    
+    .left-sidebar img {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        cursor: grab;
+    }
+    
+    .left-sidebar img:active {
+        transform: scale(0.8);
+    }
+    
+    .main-content {
+        margin-left: 150px;
+    }
+    
+    .main-content img {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    .main-content img:hover {
+        transform: scale(1.2);
+    }
+    
+    .organiser-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .administrator-directory {
+        margin-top: 50px;
+    }
+    
+    .administrator-profile {
+        margin-bottom: 50px;
+    }
+    
+    .administrator-profile h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .administrator-profile ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .administrator-profile li {
+        margin-bottom: 10px;
+    }
+</style>
+```
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header Section -->
+<header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class="header-images">
+<img src="https://github.com/Denvil-x/KYROESPORTS/blob/main/IMG/1.png" alt="Image 1" onclick="alert('You clicked on Image 1!')">
+<img src="https://github.com/Denvil-x/KYROESPORTS/blob/main/IMG/2.png" alt="Image 2" onclick="alert('You clicked on Image 2!')">
+<img src="https://github.com/Denvil-x/KYROESPORTS/blob/main/IMG/3.png" alt="Image 3" onclick="alert('You clicked on Image 3!')">
+</div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="IMG/kyroesports-logo.png" alt="KYROESPORTS Logo">
-        <h1>Welcome to KYROESPORTS</h1>
-    </section>
+```<!-- Left Sidebar -->
+<div class="left-sidebar">
+    <img src="https://github.com/Denvil-x/KYROESPORTS/blob/main/IMG/4.png" alt="Image 4" onmousedown="this.style.cursor='grabbing'" onmouseup="this.style.cursor='grab'">
+    <img src="https://github.com/Denvil-x/KYROESPORTS/blob/main/IMG/5.png" alt="Image 5" onmousedown="this.style.cursor='grabbing'" onmouseup="this.style.cursor='grab'">
+    <img src="https://github.com/Denvil-x/KYROESPORTS/blob/main/IMG/7.jpg" alt="Image 6" onmousedown="this.style.cursor='grabbing'" onmouseup="this.style.cursor='grab'">
+</div>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        <img src="IMG/about-image.jpg" alt="About Image">
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Get in Touch</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        <img src="IMG/contact-image.jpg" alt="Contact Image">
-    </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2023 KYROESPORTS</p>
-    </footer>
+<!-- Main Content -->
+<div class="main-content">
+<h1>Welcome to KYROESPORTS</h1>
+<p class="organiser-name">Organised by: 『DENVIL』 ǤĞhóšțǤ 「MīYĪLĪO」 么SpїÐɣ๛ ÚTKÂRSH卐</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+<img src="https://github.com/Denvil-x/KYROESPORTS/blob/main/IMG/kyroesports-logo.png" alt="Logo" onclick="alert('You clicked on the logo!')">
+</div>
+
+<!-- Administrator Directory -->
+<div class="administrator-directory">
+<h1>Administrator Directory</h1>
+<div class="administrator-profile">
+<h2>DENVIL</h2>
+<ul>
+<li>Name: DENVIL</li>
+<li>Role:</li>
+<li>About:</li>
+<li>Social Media:
+<ul>
+<li>Twitter:</li>
+<li>Instagram:</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="administrator-profile">
+<h2>MīYĪLĪO</h2>
+<ul>
+<li>Name: MīYĪLĪO</li>
+<li>Role:</li>
+<li>About:</li>
+<li>Social Media:
+<ul>
+<li>Twitter:</li>
+<li>Instagram:</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="administrator-profile">
+<h2>ÚTKÂRSH</h2>
+<ul>
+<li>Name: ÚTKÂRSH</li>
+<li>Role:</li>
+<li>About:</li>
+<li>Social Media:
+<ul>
+<li>Twitter:</li>
+<li>Instagram:</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="administrator-profile">
+<h2>SpїÐɣ๛</h2>
+<ul>
+<li>Name: SpїÐɣ๛</li>
+<li>Role:</li>
+<li>About:</li>
+<li>Social Media:
+<ul>
+<li>Twitter:</li>
+<li>Instagram:</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+<p>&copy; 2023 KYROESPORTS</p>
+</footer>
+
+<script>
+// Add event listeners to images
+const images = document.querySelectorAll('img');
+images.forEach(image => {
+image.addEventListener('mouseover', () => {
+image.style.transform = 'scale(1.2)';
+});
+image.addEventListener('mouseout', () => {
+image.style.transform = 'scale(1)';
+});
+});
+</script>
 </body>
 </html>
